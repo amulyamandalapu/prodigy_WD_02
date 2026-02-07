@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Stopwatch - Task-02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Stopwatch</h1>
+            <p class="subtitle">Precise Time Tracking</p>
+        </header>
+
+        <!-- Main Stopwatch Display -->
+        <div class="stopwatch-display">
+            <div class="time-display">
+                <span class="hours">00</span>
+                <span class="separator">:</span>
+                <span class="minutes">00</span>
+                <span class="separator">:</span>
+                <span class="seconds">00</span>
+                <span class="separator">.</span>
+                <span class="milliseconds">00</span>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">
+                <span class="btn-icon">▶</span>
+                <span class="btn-text">Start</span>
+            </button>
+            <button id="pauseBtn" class="btn btn-secondary">
+                <span class="btn-icon">■</span>
+                <span class="btn-text">Stop</span>
+            </button>
+            <button id="lapBtn" class="btn btn-info">
+                <span class="btn-icon">🔔</span>
+                <span class="btn-text">Lap</span>
+            </button>
+            <button id="resetBtn" class="btn btn-danger">
+                <span class="btn-icon">↻</span>
+                <span class="btn-text">Reset</span>
+            </button>
+        </div>
+
+        <!-- Lap Times Section -->
+        <div class="laps-section">
+            <h2 class="laps-title">Lap Times</h2>
+            <div class="laps-container">
+                <div id="lapsList" class="laps-list">
+                    <p class="no-laps">No lap times recorded yet. Click Lap to start recording!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <span class="stat-label">Best Lap</span>
+                <span class="stat-value" id="bestLap">--:--</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Average Lap</span>
+                <span class="stat-value" id="avgLap">--:--</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Total Laps</span>
+                <span class="stat-value" id="totalLaps">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
